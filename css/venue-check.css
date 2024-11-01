@@ -1,0 +1,71 @@
+#venue-conflict-msg-1 {
+    margin-left: 10px;
+    font-size: 14px;
+    text-transform: none;
+    font-weight: normal;
+    color: #f00;
+}
+
+#venue-conflict-msg-1:before {
+    display: inline-block;
+    margin-right 5px;
+    font-family: 'dashicons';
+    font-size: 18px;
+    content: '\f534\00a0';
+    vertical-align: middle;
+}
+
+tr#venue-conflict-msg-2 div {
+    padding: 5px 10px;
+    border-radius: 2px;
+    background: #f00;
+    font-size: 14px;
+    color: #fff;
+}
+
+#s2id_saved_tribe_venue.venue-check-error {
+    border: 2px solid #f00;
+    border-radius: 5px;
+}
+
+#with-venue-check,
+#venue-check-loading {
+    margin-left: 10px;
+    padding: 2px 5px;
+    text-transform: none;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: italic;
+    background-color: #4a4a4a;
+    color: #fff;
+    border-radius: 2px;
+}
+
+#venue-check-loading {
+    background-color: transparent;
+    color: #f00;
+    font-size: 14px;
+    display: none;
+}
+
+#venue-check-loading:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4,end) 900ms infinite;      
+  animation: ellipsis steps(4,end) 900ms infinite;
+  content: "\2026"; /* ascii code for the ellipsis character */
+  width: 0px;
+}
+
+@keyframes ellipsis {
+  to {
+    width: 20px;    
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 20px;    
+  }
+}
